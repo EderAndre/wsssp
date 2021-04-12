@@ -1,0 +1,16 @@
+# API-first development with swagger
+# This file will be used at compile time to generate Spring-MVC endpoint stubs using swagger-codegen
+swagger: "2.0"
+info:
+  title: API do SSP
+  description: Web service do SSP/RS
+  version: 0.0.1
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: query
+      name: Xapi_key
+security:
+  - ApiKeyAuth: []
+paths: {}
